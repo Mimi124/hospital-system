@@ -42,7 +42,7 @@
       @include('admin.navbar')
  
         <!-- partial -->
-        {{-- <div class="container-fluid page-body-wrapper">
+         <div class="container-fluid page-body-wrapper">
 
 
             <div class="container" align="left" style="padding-top:100px;">
@@ -92,7 +92,7 @@
                     
                     <button type="submit" class="btn btn-primary">Submit</button>
                   </form>
-                 --}}
+                
 
 
 

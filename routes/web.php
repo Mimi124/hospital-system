@@ -29,3 +29,9 @@ Route::get('/add_doctor_view',[AdminController::class, 'addview']);
 
 // Route::post('/upload_doctor',[AdminController::class, 'upload'])->name('upload_doctor');
 // Route::get('/upload_doctor',[AdminController::class, 'upload'])->name('upload_doctor');
+
+Route::post('/appointment',[HomeController::class, 'appointment'])->name('appointment');
+Route::get('/myAppointment',[HomeController::class, 'myAppointment']);
+
+Route::get('/cancel_appointment/{id}',[HomeController::class, 'cancel_appointment']);
+
