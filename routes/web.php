@@ -27,5 +27,5 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 
 Route::get('/add_doctor_view',[AdminController::class, 'addview']);
 
-Route::post('/upload_doctor',[AdminController::class, 'upload'])->name('upload_doctor');
-Route::get('/upload_doctor',[AdminController::class, 'upload'])->name('upload_doctor');
+// Route::post('/upload_doctor',[AdminController::class, 'upload'])->name('upload_doctor');
+// Route::get('/upload_doctor',[AdminController::class, 'upload'])->name('upload_doctor');

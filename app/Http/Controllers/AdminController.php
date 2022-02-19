@@ -14,26 +14,26 @@ class AdminController extends Controller
     }
 
 
-    public function upload(Request $request){
+    // public function upload(Request $request){
 
-        $doctor = new Doctor;
-        $image = $request->file;
-        $imagename = time().'.'.$image->getClientOriginalExtension();
+    //     $doctor = new Doctor;
+    //     $image = $request->file;
+    //     $imagename = time().'.'.$image->getClientOriginalExtension();
 
-        $request->file->move('doctorimage',$imagename);
-        $doctor->image=$imagename;
+    //     $request->file->move('doctorimage',$imagename);
+    //     $doctor->image=$imagename;
 
-        $doctor->name = $request->name;
-        $doctor->phone = $request->number;
-        $doctor->room = $request->room;
-        $doctor->speciality = $request->speciality;
+    //     $doctor->name = $request->name;
+    //     $doctor->phone = $request->number;
+    //     $doctor->room = $request->room;
+    //     $doctor->speciality = $request->speciality;
 
-        $doctor->save();
+    //     $doctor->save();
 
-        return redirect()->back()->with('message','Doctor Added Successfully');
+    //     return redirect()->back()->with('message','Doctor Added Successfully');
 
 
-    }
+    // }
 
   
 }
